@@ -1,0 +1,9 @@
+.venv/
+/nltk_data/
+/RAG/all-in-rag/
+/02-LangChain/OllamaSetup.exe
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
