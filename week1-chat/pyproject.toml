@@ -1,0 +1,21 @@
+[project]
+name = "week1-chat"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "杨晨旗", email = "1733692904@qq.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "openai>=1.0.0",
+    "pydantic-settings>=2.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+week1-chat = "week1_chat:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
