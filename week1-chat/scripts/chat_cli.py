@@ -13,8 +13,11 @@ async def main():
         parts = []
         # 调用 chat_stream 获取助手的回复并实时输出
         async for token in chat_stream(messages):
+            # 实时输出助手的回复
+            print(token, end="", flush=True)
             parts.append(token)
         print("助手: " + "".join(parts))
+        # 将助手的回复添加到消息列表中
         messages.append({"role": "assistant", "content": "".join(parts)})
     
 if __name__ == "__main__":
